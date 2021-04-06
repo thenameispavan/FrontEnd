@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <form action="Welcome.html" method="POST">
+        <table align="center">
+            <caption>User Registration form</caption>
+            <tr>
+                <th>UserName</th>
+                <td><input type="text" name="t1" placeholder="Enter your name" required><br></td>
+
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input type="password" name="t2"></td>
+            </tr>
+            <tr>
+                <th>E-mail</th>
+                <td><input type="email" name="t3"></td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td><input type="tel" name="t4" maxlength="12"></td>
+            </tr>
+            <tr>
+                <th>Upload Image</th>
+                <td><input type="file" name="f1"></td>
+            </tr>
+            <tr>
+                <th>DOB</th>
+                <td><input type="date" name="t5"></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td><input type="radio" value="Male" name="r1">Male
+                <input type="radio" value="Female" name="r1">Female
+                </td>
+            </tr>
+            <tr>
+                <th>Language</th>
+                <td><input type="checkbox" value="Hindi">Hindi
+                <input type="checkbox" value="Telugu">Telugu
+                <input type="checkbox" value="Tamil">Tamil</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select name="c">
+                        <option value="India">India</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="China">China</option>
+                        <option value="USA">USA</option>
+                        <option value="London">London</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address
+                </td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+                <td><input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="login">
+    </form>
+</body>
+
+</html>
