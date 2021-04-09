@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function m1(){
+                var name= document.f1.t1.value;
+                if(name.match("^[A-Za-z]+$")){
+                    return true;
+                }
+                
+                else{
+                    document.getElementById("s").innerHTML="invalid name. please enter alphabets only";
+                    
+                    document.f1.t1.focus();
+                    return false;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form action="array.html" name="f1" onsubmit="return m1()">
+            <table align="center">
+                <tr>
+                    <th>Name</th><td><input type="text" name="t1" required><br><strong id="s"></strong><br></td>
+                </tr>
+                <tr>
+                    <th>Password</th><td><input type="password" name="t2" onfocus="m1()"></td>
+                </tr>
+                <tr>
+                    <th><input type="submit" value="Submit"></th>
+                    
+                </tr>
+            </table>
+            
+            
+        
+        </form>
+    </body>
+</html>

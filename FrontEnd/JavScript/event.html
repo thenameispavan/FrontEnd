@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // function m1(){
+        //     alert("good morning");
+        // }
+        // function m1() {
+        //     var name = document.getElementById("t1").value;
+        //     document.getElementById("a").innerHTML = "<h1>Good morning<h1>" + name;
+        //     document.body.style.backgroundColor = "green";
+        // }
+        function m1(name) {
+            document.getElementById("a").innerHTML = "<h1>Good morning<h1>" + name;
+            document.body.style.backgroundColor = "green";
+        }
+    </script>
+</head>
+
+<body>
+    Enter Name<input type="text" id="t1"><br>
+    <button onclick="m1(t1.value)">good morning</button>
+    <div id="a" style="border: solid;">
+        <h1>message from button click</h1>
+    </div>
+</body>
+
+</html>

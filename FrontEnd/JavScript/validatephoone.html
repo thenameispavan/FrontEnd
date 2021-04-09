@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validatePhone(phone){
+                if(phone.match("^[6-9][0-9]{9}")&&phone.length==10)
+                {
+                    alert("valid phone");
+                }
+                else
+                alert("invalid phone")
+                
+            }
+        </script>
+    </head>
+    <body>
+        enter Phone<input type="text" id="t1">
+        <button onclick="validatePhone(t1.value)">validate phone</button>
+        
+    </body>
+</html>
